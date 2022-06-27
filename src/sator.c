@@ -3,7 +3,7 @@
 
 #define NR_BUF 4096
 
-static const char notify_fmt[] = "notify-send \"%s\"";
+static const char notify_fmt[] = "notify-send -h int:transient:1 \"%s\"";
 static const char trans_fmt[] = "trans --brief :zh \"%s\"";
 
 FILE *Popen(const char *cmd, const char *type) {
